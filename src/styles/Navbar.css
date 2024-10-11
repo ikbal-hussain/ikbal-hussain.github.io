@@ -82,11 +82,17 @@
 
     .nav-links.open {
         display: flex;
-        gap: 8px;
+        gap: 0px;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 1px;
+        /* padding: 5px; */
+        text-align: center;
+    }
+    .nav-links li a {
+        margin: 10px;
+        padding: 0px 25px;
         text-align: center;
     }
 
