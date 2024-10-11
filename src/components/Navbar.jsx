@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
+// import myresume from '/IkbalHussain-resume.pdf'
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -76,12 +77,12 @@ const Navbar = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              const newTab = window.open('/IkbalHussain-FrontendDeveloper(React).pdf', '_blank');
+              const newTab = window.open('/IkbalHussain-resume.pdf', '_blank');
               if (newTab) {
                 newTab.focus();
               }
               const link = document.createElement('a');
-              link.href = '/IkbalHussain-FrontendDeveloper(React).pdf';
+              link.href =  '/IkbalHussain-resume.pdf';
               link.setAttribute('download', 'IkbalHussain_Resume.pdf');
               document.body.appendChild(link);
               link.click();
