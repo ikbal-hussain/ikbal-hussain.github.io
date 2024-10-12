@@ -1,0 +1,55 @@
+/* Preview image styling */
+.preview-image {
+    width: 100%;         /* Ensures image takes up the full width of the preview container */
+    height: 180px;       /* Increase the height for a larger preview */
+    object-fit: cover;   /* Ensures the image fits neatly into the container without distortion */
+    border-radius: 8px; 
+   /* Keeps the rounded corners consistent with the container */
+  }
+.preview-image:hover{
+    transform: scale(1.05); 
+   
+  }
+  
+  /* Container for the link and preview */
+  .link-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Preview only shows on hover */
+  .link-preview {
+    display: none;
+    position: absolute;
+    /* top: -150px;          Adjust based on the new height of the image */
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;        /* Increase padding for better spacing */
+    z-index: 10;
+    text-align: center;
+    background-color: rgb(251, 255, 252);
+    background-color: rgb(60, 245, 85);
+    overflow: hidden;
+  }
+  
+  /* Show the preview on hover */
+  .link-container:hover .link-preview {
+    display: block;
+  }
+  
+  .link-preview h4 {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .link-preview p {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  

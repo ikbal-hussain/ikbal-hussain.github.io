@@ -2,6 +2,12 @@ import React from 'react';
 import "../styles/Contact.css"; // Importing the CSS file for styling
 
 const Contact = () => {
+   
+
+
+
+
+
   return (
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
