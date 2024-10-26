@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/LinkPreview.css"; // Add CSS for the hover effect
 
 const LinkPreviewCard = ({ url, apiKey }) => {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import LinkPreviewCard from "./LinkPreviewCard"; // Import the LinkPreviewCard component
 import "../styles/Projects.css";
 import resumeflowLogo from "../assets/resumeFlow_dashboard.png";

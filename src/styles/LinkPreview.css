@@ -5,10 +5,7 @@
     object-fit: cover;   /* Ensures the image fits neatly into the container without distortion */
     border-radius: 8px; 
    /* Keeps the rounded corners consistent with the container */
-  }
-.preview-image:hover{
-    transform: scale(1.05); 
-   
+  
   }
   
   /* Container for the link and preview */
@@ -25,15 +22,17 @@
     left: 50%;
     bottom: 35px;
     transform: translateX(-50%);
-    width: 350px;
+    width: 340px;
+    /* height: 200px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 10px;        /* Increase padding for better spacing */
+    padding: 5px;        /* Increase padding for better spacing */
     z-index: 10;
     text-align: center;
     background-color: rgb(251, 255, 252);
-    background-color: rgb(60, 245, 85);
+    background-color: rgb(12, 133, 106);
     overflow: hidden;
+    color: white;
   }
   
   /* Show the preview on hover */
@@ -45,6 +44,7 @@
     font-size: 1rem;
     color: #333;
     margin: 10px 0;
+    color: white;
   }
   
   .link-preview p {

@@ -17,7 +17,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   transition: color 0.3s ease-in-out;
-  color: black; 
+  color: black;
 }
 
 .about-section:hover .section-title {
@@ -26,10 +26,10 @@
 
 /* Paragraph styles */
 .section-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   transition: color 0.3s ease-in-out;
-  color: black; 
+  color: black;
 }
 
 .about-section:hover .section-description {
@@ -41,7 +41,7 @@
   flex: 1;
   text-align: center;
   transition: transform 0.5s ease-in-out;
-  color: black; 
+  color: black;
 }
 
 .about-image {

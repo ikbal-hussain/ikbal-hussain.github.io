@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/Skills.css"; // Importing the CSS file for styling
 import ScrollAnimation from 'react-animate-on-scroll';
 import chakraUiLogo from '../assets/chakra-ui-logo.png';
 import tailwindcssLogo from '../assets/tailwindcss-logo.png';
 import { projects } from "./Projects"; // Import your projects data
-
+import ReactTypingEffect from 'react-typing-effect'
 const skills = [
   {
     name: "Java",
@@ -82,7 +82,16 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section">
-      <h2>Skills</h2>
+      <h2>
+      <ReactTypingEffect
+                text={["Skills"]}
+                speed={100}     // Speed of typing
+                eraseSpeed={50} // Speed of erasing
+                eraseDelay={2000} // Delay before erasing starts
+                typingDelay={500} // Delay before typing starts
+            />
+        
+        </h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <ScrollAnimation 
@@ -92,7 +101,7 @@ const Skills = () => {
           >
             <div
               className="skill-card"
-              onMouseEnter={() => handleMouseEnter(skill)}
+              onClick={() => handleMouseEnter(skill)}
               onMouseLeave={handleMouseLeave}
             >
               <img src={skill.logo} alt={`${skill.name} Logo`} />
