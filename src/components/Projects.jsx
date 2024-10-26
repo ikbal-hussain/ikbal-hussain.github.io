@@ -4,15 +4,16 @@ import "../styles/Projects.css";
 import resumeflowLogo from "../assets/resumeFlow_dashboard.png";
 import sportstyleLogo from "../assets/Sportstyle-home-page.png";
 import propertypulseLogo from "../assets/PropertyPulse Screenshot 1.png";
+import ReactTypingEffect from "react-typing-effect";
 // import { env } from "process";
 
-// eslint-disable-next-line no-undef
  const apiKey = import.meta.env.VITE_LINK_PREVIEW_API_KEY;
 if (!apiKey) {
   console.error("API key is missing. Make sure it is defined in the .env file.");
 }
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const projects = [
   {
     title: "PropertyPulse",
@@ -46,7 +47,16 @@ export const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2>Projects</h2>
+      <h2>
+        <ReactTypingEffect
+                text={["Projects", "Applications"]}
+                speed={100}     // Speed of typing
+                eraseSpeed={30} // Speed of erasing
+                eraseDelay={2000} // Delay before erasing starts
+                typingDelay={500} // Delay before typing starts
+            />
+        
+        </h2>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

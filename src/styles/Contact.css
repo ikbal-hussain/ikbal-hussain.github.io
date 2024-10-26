@@ -24,7 +24,7 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
-  width: 250px;
+  width: 230px;
   text-align: center;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -54,7 +54,7 @@
 
 /* Hover Effects */
 .contact-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 

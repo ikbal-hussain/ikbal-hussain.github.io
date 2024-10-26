@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "../styles/LinkPreview.css"; 
 
-/* eslint-disable-next-line no-undef, react/prop-types */
+
 const LinkPreviewCard = ({ url, apiKey }) => {
   const [linkData, setLinkData] = useState(null);
   const [hover, setHover] = useState(false);

@@ -10,7 +10,7 @@ const About = () => {
         <ScrollAnimation animateIn="fadeIn" delay={100}>
           <h2 className="section-title">
             <ReactTypingEffect
-              text={["About Me"]}
+              text={["About Me", "Who I Am"]}
               speed={100} // Speed of typing
               eraseSpeed={50} // Speed of erasing
               eraseDelay={2000} // Delay before erasing starts

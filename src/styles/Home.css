@@ -5,10 +5,11 @@
   align-items: center;
   height: 100vh; /* Full viewport height */
   padding: 0 50px;
-  background: linear-gradient(to right, #0b8363, #25866c, #06a759);
+  /* background: linear-gradient(to right, #0b8363, #25866c, #06a759); */
+  background-color: rgb(17, 82, 17);
   color: white;
-  background-image: url('https://elitetecs.com/assets/uploads/media-uploader/frontend-webdeveloper1661704845.jpg');
-  background-repeat: no-repeat;
+  /* background-image: url('https://elitetecs.com/assets/uploads/media-uploader/frontend-webdeveloper1661704845.jpg'); */
+  /* background-repeat: no-repeat; */
 }
 
 .content-container {
@@ -38,6 +39,7 @@
 .image-container {
   flex: 1;
   text-align: center;
+  /* background-color: rgb(41, 131, 101); */
 }
 
 .three-d-image {

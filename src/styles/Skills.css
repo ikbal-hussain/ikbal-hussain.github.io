@@ -3,6 +3,7 @@
   background-color: #f4f4f4;
   padding: 50px;
   text-align: center;
+  background-color: rgb(17, 82, 17);
 }
 
 .skills-section h2 {
@@ -80,6 +81,9 @@
 /* Show tooltip on hover */
 .skill-card:hover .project-tooltip {
   opacity: 1; /* Show tooltip on hover */
+}
+.skills-section {
+  background-color: rgb(17, 82, 17);
 }
 
 /* Responsive Styles */

@@ -84,7 +84,7 @@ const Skills = () => {
     <section id="skills" className="skills-section">
       <h2>
       <ReactTypingEffect
-                text={["Skills"]}
+                text={["Skills", "Tools", "Languages"]}
                 speed={100}     // Speed of typing
                 eraseSpeed={50} // Speed of erasing
                 eraseDelay={2000} // Delay before erasing starts

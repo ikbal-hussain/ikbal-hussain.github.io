@@ -6,7 +6,16 @@ import ReactTypingEffect from "react-typing-effect";
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
-      <h2>Contact Me</h2>
+      <h2>
+      <ReactTypingEffect
+                text={["Contact Me", "Connect with Me"]}
+                speed={100}     // Speed of typing
+                eraseSpeed={50} // Speed of erasing
+                eraseDelay={2000} // Delay before erasing starts
+                typingDelay={500} // Delay before typing starts
+            />
+       
+        </h2>
       <div className="contact-cards">
         <div className="contact-card">
           <a
