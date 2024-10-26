@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import "../styles/Contact.css"; // Importing the CSS file for styling
 import ReactTypingEffect from "react-typing-effect";
-import { Parallax } from "react-parallax";
+// import { Parallax } from "react-parallax";
 
 const Contact = () => {
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "../styles/Home.css"; // Adding new CSS for Home section
 import { motion } from "framer-motion";
 
