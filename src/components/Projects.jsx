@@ -4,8 +4,14 @@ import "../styles/Projects.css";
 import resumeflowLogo from "../assets/resumeFlow_dashboard.png";
 import sportstyleLogo from "../assets/Sportstyle-home-page.png";
 import propertypulseLogo from "../assets/PropertyPulse Screenshot 1.png";
+// import { env } from "process";
 
-const apiKey = "11f72b4ed7bef9468d2593f0152212c4"; // Replace this with your actual API key
+// eslint-disable-next-line no-undef
+ const apiKey = import.meta.env.VITE_LINK_PREVIEW_API_KEY;
+if (!apiKey) {
+  console.error("API key is missing. Make sure it is defined in the .env file.");
+}
+
 
 export const projects = [
   {
