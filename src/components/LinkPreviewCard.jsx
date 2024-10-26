@@ -35,12 +35,12 @@ const LinkPreviewCard = ({ url, apiKey }) => {
       onMouseLeave={handleMouseLeave}
     >
       <a href={url} target="_blank" rel="noopener noreferrer" className="project-link">
-       {url.includes('github')? "Github" : url.includes('netlify')? "Live Demo": "Visit"}
+       {url.includes('github')? (<> <i className="fab fa-github"></i> <span>Github</span> </>) : url.includes('netlify')? (<> <i className="fa-solid fa-arrow-up-right-from-square"></i> <span>Live Demo</span> </>): "Visit"}
       </a>
       {hover && linkData && (
         <div className="link-preview">
-          <img src={linkData.image || "https://community.atlassian.com/t5/image/serverpage/image-id/312931iA1E25CBEFD2C09ED/image-size/large?v=v2&px=999"} alt={linkData.title} className="preview-image" />
-          <h4>{linkData.title.length < 16? linkData.title: linkData.title.slice(0, 26) + '...' }</h4>
+          <img src={linkData.image || "https://community.atlassian.com/t5/image/serverpage/image-id/312931iA1E25CBEFD2C09ED/image-size/large?v=v2&px=999"} alt={linkData.title || "preview image"} className="preview-image" />
+          <h4>{linkData?.title?.length < 16? linkData.title: linkData.title.slice(0, 26) + '...' }</h4>
           {/* <p>{linkData.description}</p> */}
         </div>
       )}

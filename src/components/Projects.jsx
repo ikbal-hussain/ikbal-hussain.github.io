@@ -66,7 +66,7 @@ const Projects = () => {
               className="project-image"
             />
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p>{project?.description}</p>
             <p className="tech-stack">
               {project.techStack.map((techStackItem, idx) => (
                 <span key={idx}>{techStackItem}</span>
