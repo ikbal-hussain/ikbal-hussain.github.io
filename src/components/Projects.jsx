@@ -1,11 +1,11 @@
 
-import LinkPreviewCard from "./LinkPreviewCard"; // Import the LinkPreviewCard component
+import LinkPreviewCard from "./LinkPreviewCard"; 
 import "../styles/Projects.css";
 import resumeflowLogo from "../assets/resumeFlow_dashboard.png";
 import sportstyleLogo from "../assets/Sportstyle-home-page.png";
 import propertypulseLogo from "../assets/PropertyPulse Screenshot 1.png";
 import ReactTypingEffect from "react-typing-effect";
-// import { env } from "process";
+
 
  const apiKey = import.meta.env.VITE_LINK_PREVIEW_API_KEY;
 if (!apiKey) {
@@ -13,7 +13,7 @@ if (!apiKey) {
 }
 
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const projects = [
   {
     title: "PropertyPulse",
@@ -50,10 +50,10 @@ const Projects = () => {
       <h2>
         <ReactTypingEffect
                 text={["Projects", "Applications"]}
-                speed={100}     // Speed of typing
-                eraseSpeed={30} // Speed of erasing
-                eraseDelay={2000} // Delay before erasing starts
-                typingDelay={500} // Delay before typing starts
+                speed={100}     
+                eraseSpeed={30} 
+                eraseDelay={2000} 
+                typingDelay={500}
             />
         
         </h2>
