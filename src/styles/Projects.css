@@ -74,7 +74,7 @@
 
 .project-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .project-link {
@@ -108,6 +108,10 @@
     margin-top: 10px;
     margin-bottom: 5px;
   }
+  .project-links {
+    justify-content: center;
+    gap: 150px;
+  }
 }
 @media (max-width: 1000px) {
   .project-card {
@@ -117,4 +121,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+@media (max-width: 420px){
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }  
 }

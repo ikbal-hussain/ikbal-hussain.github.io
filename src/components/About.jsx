@@ -33,7 +33,7 @@ const About = () => {
         {/* </ScrollAnimation> */}
       </div>
       <div className="image-container">
-        <ScrollAnimation animateIn="fadeInRight" delay={200}>
+        <ScrollAnimation animateIn="fadeIn" delay={0}>
           <img src={myImage} alt="About Me" className="about-image" />
         </ScrollAnimation>
       </div>

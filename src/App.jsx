@@ -6,6 +6,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './styles/styles.css';
+import "animate.css";
+
 
 function App() {
   return (

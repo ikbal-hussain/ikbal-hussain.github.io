@@ -9,13 +9,15 @@ const Home = () => {
     <section id="home" className="home-section full-screen">
       <div className="content-container">
         <h1 id="user-detail-name" className="main-heading">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, x: 100 }}
             transition={{ duration: 1 }}
-          >
+          > */}
+          <div>
             Hi! I am Ikbal Hussain
-          </motion.div>
+            </div>
+          {/* </motion.div> */}
         </h1>
         <p id="user-detail-intro" className="sub-heading">
           

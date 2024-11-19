@@ -1,10 +1,15 @@
 
 .fixed-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-nav {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #0a5a3e; 
-    z-index: 1000;
+    z-index: 9999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -58,7 +63,7 @@
     font-size: 1.8rem;
     cursor: pointer;
     display: none; /* Hidden on desktop */
-    margin-right: 15px;
+    padding-right: 30px;
 }
 
 .nav-links.open {
@@ -80,10 +85,16 @@
     .nav-links {
         display: none;
     }
+    .nav-links {
+        margin: 0;
+        padding: 0;
+    }
 
     .nav-links.open {
         display: flex;
         gap: 0px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .nav-links li {
@@ -99,7 +110,7 @@
 
     .nav-link {
         font-size: 1.5rem;
-        padding: 2px;
+        /* padding: 2px; */
     }
     /* .fixed-nav{
         margin-bottom: 990px;
@@ -107,4 +118,13 @@
 }
 section {
     padding-top: 70px; 
+}
+.fixed-nav, .nav-links.open {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }

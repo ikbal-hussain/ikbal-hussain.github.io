@@ -1,55 +1,111 @@
 /* Preview image styling */
 .preview-image {
-    width: 100%;         /* Ensures image takes up the full width of the preview container */
-    height: 180px;       /* Increase the height for a larger preview */
-    object-fit: cover;   /* Ensures the image fits neatly into the container without distortion */
-    border-radius: 8px; 
-   /* Keeps the rounded corners consistent with the container */
-  
-  }
-  
-  /* Container for the link and preview */
-  .link-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Preview only shows on hover */
-  .link-preview {
-    display: none;
-    position: absolute;
-    /* top: -150px;          Adjust based on the new height of the image */
-    left: 50%;
-    bottom: 35px;
-    transform: translateX(-50%);
-    width: 340px;
-    /* height: 200px; */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 5px;        /* Increase padding for better spacing */
-    z-index: 10;
-    text-align: center;
-    background-color: rgb(251, 255, 252);
-    background-color: rgb(12, 133, 106);
-    overflow: hidden;
-    color: white;
-  }
-  
-  /* Show the preview on hover */
-  .link-container:hover .link-preview {
-    display: block;
-  }
-  
-  .link-preview h4 {
-    font-size: 1rem;
+  width: 100%;         /* Ensures image takes up the full width of the preview container */
+  height: 180px;       /* Set a default height for larger screens */
+  object-fit: cover;   /* Ensures the image fits neatly into the container without distortion */
+  border-radius: 8px;  /* Keeps the rounded corners consistent with the container */
+}
+
+/* Container for the link and preview */
+.link-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Preview only shows on hover */
+.link-preview {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  width: 340px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 10;
+  text-align: center;
+  background-color: rgb(12, 133, 106);
+  overflow: hidden;
+  color: white;
+}
+
+/* Show the preview on hover */
+.link-container:hover .link-preview {
+  display: block;
+}
+
+.link-preview h4 {
+  font-size: 1rem;
+  color: white;
+  margin: 10px 0;
+}
+
+.link-preview p {
+  color: #ffffffcc; /* Slightly lighter text color for readability */
+  font-size: 0.9rem;
+  margin: 0;
+}
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;          /* Add spacing between icon and text */
+    font-size: 1rem;   /* Default font size for larger screens */
     color: #333;
-    margin: 10px 0;
-    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    justify-content: center; 
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .preview-image {
+      height: 150px;    /* Reduce image height on smaller screens */
   }
-  
+  .link-preview {
+      width: 90%;       /* Use a percentage width to fit better on small screens */
+      bottom: 25px;
+      padding: 10px; 
+      display: none;   /* Increase padding for a cleaner look */
+  }
+  .link-preview h4 {
+      font-size: 0.9rem; /* Adjust font size for better readability on smaller screens */
+  }
   .link-preview p {
-    color: #555;
-    font-size: 0.9rem;
-    margin: 0;
+      font-size: 0.8rem;
   }
-  
+  .link-container .project-link{
+    font-size: 0.9rem; /* Reduce font size slightly for better fit */
+    padding: 3px 6px;  /* Adjust padding */
+    gap: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .preview-image {
+      height: 120px;   /* Further reduce height on very small screens */
+  }
+  .link-preview {
+      /* width: 80%;      Decrease width to fit smaller screens */
+      bottom: 20px;
+      padding: 8px;
+  }
+  .link-preview h4 {
+      font-size: 0.85rem;
+  }
+  .link-preview p {
+      font-size: 0.75rem;
+  }
+  .project-link {
+    font-size: 0.8rem;  /* Reduce font size on very small screens */
+    padding: 4px 6px;
+    width: 60px;
+    /* text-align: center; */
+}
+/* .project-link span{
+  text-align: center;
+  display: flex;
+} */
+}
